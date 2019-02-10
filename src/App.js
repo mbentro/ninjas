@@ -10,12 +10,12 @@ class App extends Component {
     ]
   }
 
-  render() {    
+  render() {    //class based componented require render method, functional ones do not
     return (
       <div className="App">      
         <h1>My first React app</h1>
         <p>Welcome!</p>
-        <Ninjas name="Ryu" age="30" belt="Black" />
+        <Ninjas ninjas={ this.state.ninjas }/>
       </div>
     );
   }
